@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <TextView
+      android:id="@+id/section_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_marginBottom="8dp"
+      android:textColor="@color/colorPrimaryDark"
+      android:textSize="20sp"
+
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.332"
+      tools:text="ViewPager Example" />
+
+  <com.google.android.material.chip.ChipGroup
+      android:id="@+id/sortGroup"
+      android:layout_width="263dp"
+      android:layout_height="53dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="350dp"
+      android:layout_marginBottom="317dp"
+      app:chipSpacing="10dp"
+      app:chipSpacingHorizontal="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.709"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.525"
+      app:singleLine="true"
+      app:singleSelection="true">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/sortchip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#d3d3d3"
+        android:checkable="true"
+        android:text="Distance"
+        android:textSize="20sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:checkedIconVisible="true"
+        app:chipIconVisible="false"
+        app:closeIconVisible="false" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/sortchip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#d3d3d3"
+        android:checkable="true"
+        android:text="Available lots"
+        android:textSize="20sp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        app:checkedIconVisible="true"
+        app:chipIconVisible="false"
+        app:closeIconVisible="false" />
+
+  </com.google.android.material.chip.ChipGroup>
+
+  <Button
+      android:id="@+id/done"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="162dp"
+      android:layout_marginTop="181dp"
+      android:layout_marginEnd="162dp"
+      android:layout_marginBottom="30dp"
+      android:text="Done"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/sortGroup"
+      app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

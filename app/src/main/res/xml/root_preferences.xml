@@ -1,0 +1,47 @@
+<!--
+  ~ Copyright 2018 The app Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/vehicle_header">
+        <ListPreference
+            android:summary="%s"
+            android:entries="@array/vehicleList"
+            android:entryValues="@array/vehicleList"
+            android:key="vehiclePref"
+            android:title="Select vehicle" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/parking_header">
+        <ListPreference
+            android:summary="%s"
+            android:entries="@array/parkingList"
+            android:entryValues="@array/parkingList"
+            android:key="parkingPref"
+            android:title="Select parking" />
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="@string/sort_header">
+        <ListPreference
+            android:summary="%s"
+            android:entries="@array/sortList"
+            android:entryValues="@array/sortList"
+            android:key="sortPref"
+            android:title="Sort by"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <string name="tab_text_1">Step 1</string>
+    <string name="tab_text_2">Step 2</string>
+    <string name="tab_text_3">Step 3</string>
+</resources>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0000000"
+    android:clickable="true"
+    tools:context=".BlankFragment2">
+
+    <ImageView
+        android:id="@+id/pointtocar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="112dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/whitedown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lblLorryLots"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblCarLots5" />
+
+    <ImageView
+        android:id="@+id/pointtolorry"
+        android:layout_width="0dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="120dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/whitedown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pointtomototr"
+        app:layout_constraintStart_toEndOf="@+id/lblCarLots" />
+
+    <ImageView
+        android:id="@+id/pointtomototr"
+        android:layout_width="54dp"
+        android:layout_height="98dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="120dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/whitedown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pointtolorry"
+        app:layout_constraintTop_toBottomOf="@+id/lblCarLots4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblCarLots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="195dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Car Lots"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#cFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pointtolorry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pointsort4" />
+
+    <ImageView
+        android:id="@+id/pointsort"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginBottom="36dp"
+        android:scaleType="centerInside"
+        android:scaleX="-1"
+        android:scaleY="-1"
+        android:src="@drawable/whitearrow"
+        app:layout_constraintBottom_toTopOf="@+id/pointtocar"
+        app:layout_constraintEnd_toStartOf="@+id/lblCarLots2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblCarLots2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="188dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Height Clearance"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#cFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pointsort"
+        app:layout_constraintTop_toTopOf="@+id/pointsort" />
+
+    <ImageView
+        android:id="@+id/pointsort3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="44dp"
+        android:scaleType="centerInside"
+        android:scaleX="-1"
+        android:scaleY="-1"
+        android:src="@drawable/whitearrow"
+        app:layout_constraintBottom_toTopOf="@+id/pointsort"
+        app:layout_constraintEnd_toStartOf="@+id/lblCarLots3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblCarLots3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="172dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="No. of floors"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#cFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pointsort3"
+        app:layout_constraintTop_toTopOf="@+id/pointsort3" />
+
+    <TextView
+        android:id="@+id/lblCarLots4"
+        android:layout_width="132dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Distance between you and the carpark"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#cFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pointtomototr2"
+        android:layout_width="85dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="142dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/whitedown"
+        app:layout_constraintBottom_toTopOf="@+id/lblLorryLots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblBikeLots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Bike Lots"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#cFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/lblCarLots"
+        app:layout_constraintStart_toStartOf="@+id/pointtolorry"
+        app:layout_constraintTop_toTopOf="@+id/lblCarLots" />
+
+    <TextView
+        android:id="@+id/lblLorryLots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="202dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Lorry Lots"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#cFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pointtocar"
+        app:layout_constraintTop_toBottomOf="@+id/pointtomototr2" />
+
+    <ImageView
+        android:id="@+id/pointsort4"
+        android:layout_width="47dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginBottom="169dp"
+        android:scaleType="centerInside"
+        android:scaleX="-1"
+        android:scaleY="-1"
+        android:src="@drawable/whitearrow"
+        app:layout_constraintBottom_toTopOf="@+id/lblCarLots"
+        app:layout_constraintEnd_toStartOf="@+id/lblCarLots5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblCarLots5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginBottom="179dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Mode of Payment"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#cFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/pointtocar"
+        app:layout_constraintStart_toEndOf="@+id/pointsort4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
